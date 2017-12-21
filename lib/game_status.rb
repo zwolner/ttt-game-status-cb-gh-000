@@ -25,7 +25,7 @@ def won?(board)
   index_iterator.each do |index|
      if board[index] == "X"
        x << index
-     else board[index] == "O"
+     elsif board[index] == "O"
        o << index
      end
    end
