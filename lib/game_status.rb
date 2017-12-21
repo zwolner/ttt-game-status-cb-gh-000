@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
 index_iterator = [0,1,2,3,4,5,6,7,8]
 x = Array.new
 o = Array.new
