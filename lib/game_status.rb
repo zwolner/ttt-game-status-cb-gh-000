@@ -28,9 +28,9 @@ def won?(board)
      elsif board[index] == "O"
       o << index
      end
-   end
-   x
-   o
+     x
+     o
+   end   
 end
    WIN_COMBINATIONS.detect do |win|
      if win == x || o
