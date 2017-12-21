@@ -24,13 +24,11 @@ def won?(board)
   o = Array.new
   index_iterator.each do |index|
      if board[index] == "X"
-       x << index
+      x << index
      elsif board[index] == "O"
-       o << index
+      o << index
      end
    end
-   x
-   o
 end
    WIN_COMBINATIONS.detect do |win|
      if win == x || o
