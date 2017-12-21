@@ -31,3 +31,9 @@ def full?(board)
     index == " "
   end
 end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+    true
+  else
+    false
