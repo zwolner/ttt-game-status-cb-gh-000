@@ -28,6 +28,6 @@ end
 
 def full?(board)
   board.none? do |index|
-    index == " " || "" || nil
+    index == " "
   end
 end
