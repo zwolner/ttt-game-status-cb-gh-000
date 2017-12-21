@@ -25,3 +25,9 @@ def won?(board)
     return nil
   end
 end
+
+def full?(board)
+  board.none? do |index|
+    index == " " || "" || nil
+  end
+end
