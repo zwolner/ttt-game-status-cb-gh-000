@@ -23,4 +23,5 @@ def won?(board)
   end
   if win_combination = []
     return nil
+  end
 end
