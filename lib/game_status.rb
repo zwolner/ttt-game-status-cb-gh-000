@@ -16,12 +16,12 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-
-index_iterator = [0,1,2,3,4,5,6,7,8]
-x = Array.new
-o = Array.new
 board = ["X", "O", "X", "O", "X", "O", "X", "X", "O"]
+
 def won?(board)
+  index_iterator = [0,1,2,3,4,5,6,7,8]
+  x = Array.new
+  o = Array.new
   index_iterator.each do |index|
      if board[index] == "X"
        x << index
@@ -29,8 +29,7 @@ def won?(board)
        o << index
      end
    end
-x
-o
+x, o
 end
    WIN_COMBINATIONS.detect do |win|
      if win == x || o
