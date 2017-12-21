@@ -29,8 +29,6 @@ def won?(board)
        o << index
      end
    end
-x
-o
 end
    WIN_COMBINATIONS.detect do |win|
      if win == x || o
