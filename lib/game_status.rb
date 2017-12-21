@@ -28,7 +28,7 @@ def won?(board)
      end
    end
    WIN_COMBINATIONS.detect do |win|
-     if win == "X" || "O"
+     if win == x || o
        win
      else
        false
