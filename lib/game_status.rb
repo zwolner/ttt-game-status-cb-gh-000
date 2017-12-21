@@ -45,3 +45,12 @@ def over?(board)
     true
   end
 end
+
+def winner(board)
+  if won?(board)
+    WIN_COMBINATIONS.select do |win_combination|
+      return "X" if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
+      return "O" if board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
+    end
+  end
+end
